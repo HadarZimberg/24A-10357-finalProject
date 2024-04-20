@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI_Controllers.StartActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/start_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/login_screen" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="370dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_BTN_login"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/amber_200"
+            android:elevation="@dimen/elevation"
+            android:fontFamily="@font/alfaslabone_regular"
+            android:text="login"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:icon="@drawable/pow"
+            app:iconGravity="start"
+            app:iconPadding="16dp"
+            app:iconSize="40dp"
+            app:iconTintMode="multiply"
+            app:strokeWidth="4dp"
+            tools:ignore="RtlCompat" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_BTN_registration"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/amber_200"
+            android:elevation="@dimen/elevation"
+            android:fontFamily="@font/alfaslabone_regular"
+            android:text="registration"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:icon="@drawable/pow"
+            app:iconGravity="start"
+            app:iconPadding="16dp"
+            app:iconSize="40dp"
+            app:iconTintMode="multiply"
+            app:strokeWidth="4dp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+</RelativeLayout>

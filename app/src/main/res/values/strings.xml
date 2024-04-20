@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">WoofWalk</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_list">List</string>
+    <string name="title_map">Map</string>
+    <string name="app_description">The finder app that connects dog walkers with dog owners nearby</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id">ID</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="dog_name">Dog Name</string>
+    <string name="dog_age">Dog Age</string>
+    <string name="dog_breed">Dog Breed</string>
+    <string name="address">Address</string>
+    <string name="rating_tools">2.5</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="lets_go">Let\'s go!</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="im_a_dog_walker">I\'m a dog walker</string>
+    <string name="im_a_dog_owner">I\'m a dog owner</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="hi_dog_walker">Hi Dog Walker!</string>
+    <string name="log_out">Log Out</string>
+    <string name="rating">Rating</string>
+    <string name="number_of_raters">Number Of Raters</string>
+</resources>

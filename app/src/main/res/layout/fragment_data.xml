@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amber_200"
+    tools:context=".Fragments.DataFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/data_CARD_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/orange_100"
+        android:elevation="8dp"
+        app:cardCornerRadius="24dp">
+
+        <RelativeLayout
+            android:id="@+id/data_RL_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/alfaslabone_regular"
+                android:text="Tap on a marker to see details"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/data_IMG_picture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:padding="4dp"
+            android:src="@drawable/user"
+            android:visibility="invisible"
+            app:civ_border_color="@color/amber"
+            app:civ_border_width="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_RL_data"
+            app:layout_constraintStart_toStartOf="@id/item_CARD_data"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/data_RL_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="8dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:visibility="invisible">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/data_LBL_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/data_LBL_name"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/rowdies_regular"
+                android:paddingHorizontal="4dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck"
+                tools:text="Dog Name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/data_LBL_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/data_LBL_name"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/rowdies_regular"
+                android:paddingHorizontal="4dp"
+                android:textColor="@color/black"
+                tools:text="age" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/data_LBL_breed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/data_LBL_age"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/rowdies_regular"
+                android:paddingHorizontal="4dp"
+                android:textColor="@color/black"
+                tools:text="breed" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

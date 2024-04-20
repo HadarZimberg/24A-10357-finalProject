@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woofwalk1"
+    tools:context=".UI_Controllers.DogOwnerSignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/owner_ET_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:elevation="24dp"
+                android:fontFamily="@font/alfaslabone_regular"
+                android:shadowColor="@color/amber"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="48"
+                android:text="Hi Dog Owner!"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/owner_ET_id"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/orange_100"
+                android:elevation="24dp"
+                android:fontFamily="@font/alfaslabone"
+                android:hint="@string/id"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/owner_ET_title" />
+
+            <EditText
+                android:id="@+id/owner_ET_firstname"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/orange_100"
+                android:elevation="24dp"
+                android:fontFamily="@font/alfaslabone"
+                android:hint="@string/first_name"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/owner_ET_id" />
+
+            <EditText
+                android:id="@+id/owner_ET_lastname"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/orange_100"
+                android:elevation="24dp"
+                android:fontFamily="@font/alfaslabone"
+                android:hint="@string/last_name"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/owner_ET_firstname" />
+
+            <EditText
+                android:id="@+id/owner_ET_phone"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/orange_100"
+                android:elevation="24dp"
+                android:fontFamily="@font/alfaslabone"
+                android:hint="@string/phone_number"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/owner_ET_lastname" />
+
+            <EditText
+                android:id="@+id/owner_ET_address"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/orange_100"
+                android:elevation="24dp"
+                android:fontFamily="@font/alfaslabone"
+                android:hint="@string/address"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/owner_ET_phone" />
+
+            <EditText
+                android:id="@+id/owner_ET_dogname"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/orange_100"
+                android:elevation="24dp"
+                android:fontFamily="@font/alfaslabone"
+                android:hint="@string/dog_name"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/owner_ET_address" />
+
+            <EditText
+                android:id="@+id/owner_ET_dogage"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/orange_100"
+                android:elevation="24dp"
+                android:fontFamily="@font/alfaslabone"
+                android:hint="@string/dog_age"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/owner_ET_dogname" />
+
+            <EditText
+                android:id="@+id/owner_ET_dogbreed"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/orange_100"
+                android:elevation="24dp"
+                android:fontFamily="@font/alfaslabone"
+                android:hint="@string/dog_breed"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/owner_ET_dogage" />
+
+            <Button
+                android:id="@+id/owner_BTN_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="640dp"
+                android:backgroundTint="@color/amber_200"
+                android:fontFamily="@font/alfaslabone_regular"
+                android:text="@string/lets_go"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:icon="@drawable/pow"
+                app:iconGravity="start"
+                app:iconPadding="16dp"
+                app:iconSize="30dp"
+                app:iconTintMode="multiply"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeWidth="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</FrameLayout>

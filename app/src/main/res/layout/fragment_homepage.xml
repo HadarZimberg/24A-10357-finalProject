@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woofwalk1"
+    android:padding="16dp"
+    tools:context=".Fragments.HomepageFragment">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/homepage_IMG_images"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_below="@id/homepage_TXT_heading"
+            android:layout_centerInParent="true"
+            android:elevation="@dimen/elevation"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/homepage_TXT_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:elevation="@dimen/elevation"
+            android:fontFamily="@font/alfaslabone"
+            android:shadowColor="@color/amber"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="48"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            tools:text="Hello User!" />
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/homepage_BTN_logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:backgroundTint="@color/yellow_700"
+        android:fontFamily="@font/alfaslabone"
+        android:text="@string/log_out"
+        android:textColor="@color/black"
+        app:strokeWidth="2dp" />
+
+</FrameLayout>

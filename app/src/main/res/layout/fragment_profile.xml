@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Fragments.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill">
+
+                <ImageView
+                    android:id="@+id/profile_IMG_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/profile_banner" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_IMG_picture"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="80dp"
+                    android:clickable="true"
+                    android:src="@drawable/profile_pic"
+                    app:civ_border_color="@color/amber"
+                    app:civ_border_width="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/profile_MTV_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="240dp"
+                    android:fontFamily="@font/alfaslabone_regular"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="mail_address@example.com" />
+
+                <LinearLayout
+                    android:id="@+id/profile_LL_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttons_background"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_MTV_mail">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/id"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/id" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/first_name"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_firstname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/first_name" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/last_name"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_lastname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/last_name" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/phone_number"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/phone_number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/profile_LL_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/address"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:text="@string/address" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/profile_LL_dogname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/dog_name"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_dogname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/dog_name" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/profile_LL_dogage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+
+                            android:text="@string/dog_age"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_dogage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/dog_age" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/profile_LL_dogbreed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/dog_breed"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_dogbreed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/dog_breed" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_LL_walker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttons_background"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_MTV_mail">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/id"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_id1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/id" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/first_name"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_firstname1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/first_name" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/last_name"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_lastname1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/last_name" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/phone_number"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_phone1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/phone_number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/rating"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/rating" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rowdies_light"
+                            android:text="@string/number_of_raters"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/profile_MTV_numOfRaters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alfaslabone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:text="@string/number_of_raters" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
